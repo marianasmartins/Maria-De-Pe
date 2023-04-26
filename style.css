@@ -1,0 +1,245 @@
+:root{
+    --fonte-logo: 'Bigshot One', cursive;
+    --fonte-texto: 'Noto Serif Lao', serif;
+    --cor-de-fundo: #f7f6c2;
+    --cor-branca: #fcf6f6fd;
+    --cor-azulescuro: #01005E; 
+    --cor-azul-claro: #80D6FF;
+    --cor-vermelha: #F06868;
+    --cor-vermelha-logo: #e72121;
+    --cor-verde: #8af3c4;
+    --cor-laranja: #FAB57A;
+    --cor-amarela: #ffeb77;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-branca);
+    padding: 1em;
+}
+
+.cabecalho__logo{
+    display: flex;
+}
+
+.cabecalho__titulo{
+    color: var(--cor-vermelha-logo);
+    font-family: var(--fonte-logo);
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.cabecalho__lista-titulo{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 3em;
+    font-family: var(--fonte-texto); 
+    color: var(--cor-vermelha);
+}
+
+.cabecalho__inicio{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    color: var(--cor-laranja);
+    text-decoration: none;
+}
+
+.indicacao{
+    background-color: var(--cor-vermelha);
+    padding: 3em 0;
+    font-family: var(--fonte-texto); 
+    color: #f7f6c2;
+}
+
+.indicacao__loja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.indicacao__titulo{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.indicacao__autor{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 4px var(--cor-de-fundo);
+    border-radius: 10px;
+    margin: 1em 10em;
+    padding: 1em;
+      
+}
+
+.indicacao__autor-texto{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10em 1em 0 0;
+    font-size: 24px;
+    line-height: 30px;
+        
+}
+
+.indicacao__img{
+    width: 80%;
+}
+
+.lancamento__titulo{
+    font-size: 24px;
+    color: var(--cor-azulescuro);
+    text-align: center;
+    font-weight: bold;
+    padding: 2em 0;
+    text-transform: uppercase;
+}
+
+.lancamento__produtos{
+    background-color: var(--cor-de-fundo);
+    padding: 3em 0;
+    font-family: var(--fonte-texto); 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lancamento__produtos img{
+    width: 70%;
+    padding-top: 16px;
+}
+
+.lancamento__img{
+   
+   margin: 2em;
+   text-align: center;
+   box-shadow: 0px 0px 4px var(--cor-vermelha);
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+.lancamento__img p{
+    color: var(--cor-vermelha);
+    padding-top: 1em;
+}
+
+.rodape{
+    border-top: 1px solid var(--cor-azul-claro);
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    color: var(--cor-de-fundo);
+    background: var(--cor-laranja);
+    padding: 2em;
+    text-align: center;
+    line-height: 18px;
+    
+}
+
+@media screen and (max-width:500px){
+    
+.cabecalho{
+    display: block;
+}    
+
+.cabecalho__titulo{
+    font-size: 50px;
+    padding: 0 0.90em 0 0.90em;
+
+}
+
+.cabecalho__lista-titulo{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.cabecalho__inicio{
+    display: none;
+}
+
+.indicacao{
+    background-color: var(--cor-vermelha);
+    padding: 3em 0;
+    font-family: var(--fonte-texto); 
+    color: #f7f6c2;
+}
+
+.indicacao__loja{
+    display: block;
+}   
+
+.indicacao__titulo{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1em 0.25em 1em;
+    line-height: 28px;
+}
+
+.indicacao__autor{
+    display: block;
+    box-shadow: 0px 0px 4px var(--cor-de-fundo);
+    border-radius: 10px;
+    margin: 2em 2em;
+    text-align: center;
+        
+}
+
+.indicacao__autor-texto{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0em 1em 1em 1em;
+        
+}
+
+.lancamento__produtos{
+    background-color: var(--cor-de-fundo);
+    padding: 3em 0;
+    font-family: var(--fonte-texto); 
+    display: block;
+    
+}
+
+.lancamento__produtos img{
+    width: 80%;
+    padding-top: 16px;
+}
+
+.lancamento__img{
+   
+   margin: 2em;
+   text-align: center;
+   box-shadow: 0px 0px 4px var(--cor-vermelha);
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+
+.lancamento__img p{
+    color: var(--cor-vermelha);
+    padding-top: 1em;
+}
+
+.rodape{
+    border-top: 1px solid var(--cor-azul-claro);
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    color: var(--cor-de-fundo);
+    background: var(--cor-laranja);
+    padding: 2em;
+    text-align: center;
+    line-height: 18px;
+    
+}
+
+
+};
+    
